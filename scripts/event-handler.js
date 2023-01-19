@@ -3,11 +3,11 @@
 * January 19 
 **/
 
-var welcomeLabel = document.getElementById("welcome");
-var displayEvent = document.getElementById("displayEvent");
+var welcomeLabel = document.getElementById("welcome")
+var displayEvent = document.getElementById("displayEvent")
 
-var userDisplay = document.getElementById('userDisplay');
-var passDisplay = document.getElementById('passDisplay')
+var userDisplay = document.getElementById("userDisplay");
+var passDisplay = document.getElementById("passDisplay");
 
 
 welcomeLabel.addEventListener("dblclick", function () {
@@ -26,16 +26,29 @@ welcomeLabel.addEventListener("mouseout", function () {
 });
 
 function validateForm() {
-    let x = document.forms['myForm']['username'].value;
-    let y = document.forms['myForm']['password'].value;
-
-    if (x == ""){
+    let x = document.forms["myForm"]["username"].value;
+    let y = document.forms["myForm"]["password"].value;
+    if (x == "") {
         alert("Name must be filled out");
         return false;
     } else {
         console.log(`Username: ${ x } \n Password: ${ y }`)
-        userDisplay.textContext = x;
+        userDisplay.textContent = x;
         passDisplay.textContent = y;
         return false;
     }
 }
+
+// function validateForm() {
+//     let x = document.forms["myForm"]["username"].value;
+//     let y = document.forms["myForm"]["password"].value;
+//     if (x == "") {
+//         alert("Name must be filled out");
+//         return false;
+//     } else {
+//         console.log(`Username: ${ x } \n Password: ${ y }`)
+//         userDisplay.textContent = x; userDisplay.textContext = x; -> the second one here was my original line and it didn't work until I replaced it ??????
+//         passDisplay.textContent = y;
+//         return false;
+//     }
+// }
