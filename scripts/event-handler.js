@@ -1,7 +1,10 @@
-/* 
-* Week 2 - In class demo
-* January 19 
-**/
+/**
+ * @author Angelica Kusik
+ * @version 1.2.0
+ * @since January 12, 2023
+ * @description WEBD6201 in class demonstrations
+ * 
+ */
 
 var welcomeLabel = document.getElementById("welcome")
 var displayEvent = document.getElementById("displayEvent")
@@ -52,3 +55,4 @@ function validateForm() {
 //         return false;
 //     }
 // }
+
