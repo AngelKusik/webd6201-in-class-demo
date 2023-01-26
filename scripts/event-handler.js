@@ -10,20 +10,20 @@ var userDisplay = document.getElementById("userDisplay");
 var passDisplay = document.getElementById("passDisplay");
 
 
-welcomeLabel.addEventListener("dblclick", function () {
-    console.log("Event: double click");
-    displayEvent.textContent = "Event: double click";
-});
+// welcomeLabel.addEventListener("dblclick", function () {
+//     console.log("Event: double click");
+//     displayEvent.textContent = "Event: double click";
+// });
 
-welcomeLabel.addEventListener("mouseover", function () {
-    console.log("Event: click");
-    displayEvent.textContent = "Event: mouseover";
-});
+// welcomeLabel.addEventListener("mouseover", function () {
+//     console.log("Event: click");
+//     displayEvent.textContent = "Event: mouseover";
+// });
 
-welcomeLabel.addEventListener("mouseout", function () {
-    console.log("Event: click");
-    displayEvent.textContent = "Event: mouseout";
-});
+// welcomeLabel.addEventListener("mouseout", function () {
+//     console.log("Event: click");
+//     displayEvent.textContent = "Event: mouseout";
+// });
 
 function validateForm() {
     let x = document.forms["myForm"]["username"].value;
