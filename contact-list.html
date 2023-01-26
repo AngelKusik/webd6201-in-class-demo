@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/de73bfd3a4.js" crossorigin="anonymous"></script>
     <!--Style Sheet-->
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Webd 6201 - In Class Demo</title>
+    <title>Contact List - WEBD 6201 Demo</title>
 </head>
 <body>
     <!--Start of Navbar -->
@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">
+                <a class="nav-link" href="index.html">
                     <i class="fa-solid fa-house"></i>
                     Home
                 </a>
@@ -55,7 +55,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact-list.html">
+                <a class="nav-link active" aria-current="page" href="contact-list.html">
                   <i class="fa-solid fa-list"></i>
                     Contact List
                 </a>
@@ -74,39 +74,25 @@
 
     <div class="container">
 
+      <header>
         <h1 id="welcome" class="mt-5">
-            <i class="fa-solid fa-ghost"></i>
-            Hello World! 
+          <i class="fa-solid fa-list"></i>
+            Contact List 
         </h1>
-
-        <h2 class="mb-5">
-            Welcome to our Webd6201 demo home page
-        </h2>
-        
-        <h2 id="displayEvent" class="border mb-5"></h2>
-    
-        <form method="get" id="myForm" name="myForm" onsubmit="return validateForm()" class="container">
-            <div class="mb-3">
-                <label class="form-label" for="username">Username:</label>
-                <input class="form-control" type="text" id="username" name="username" placeholder="e.g. Enter your name">
-            </div>
-            <div>
-                <label class="form-label" for="password">Password:</label>
-                <input class="form-control" type="text" id="password" name="password">
-            </div>
-            <button type="submit" class="btn btn-danger mt-3" id="submitutton">Submit</button>
-        </form>
-
-        <div class="container">
-            <div class="mb-3">
-              <label for="disabledTextInput" class="form-label" id="userDisplay"></label>
-            </div>
-            <div class="mb-3">
-              <label for="disabledTextInput" class="form-label" id="passDisplay"></label>
-            </div>
-        </div>
-
+      </header>
     </div>
+
+    <main>
+
+      <div class="container">
+
+        <button id="ContactListButton" class="btn btn-primary mt-5">Click to See Contact List</button>
+
+        <p><em>Not implemented yet</em></p>
+
+      </div>
+
+    </main>
     
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
