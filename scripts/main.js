@@ -12,23 +12,40 @@
         })
 
         let mainContent = document.getElementsByTagName("main")[0]
-        console.log(mainContent)
+        mainContent.setAttribute("class", "container")
 
 
         let mainParagraph = document.createElement("p")
         mainParagraph.setAttribute("id", "MainParagraph")
         mainParagraph.setAttribute("class", "mt-3")
 
+        let firstString = "This is a "
+        let secondString = `${ firstString } main paragraph that we added through javascript`
 
-        let firstString = "This is a main paragraph that we added through javascript"
+        mainParagraph.textContent = secondString
 
-
-        mainParagraph.textContent = firstString
+        //adding strings together:
+        //we can concatenate them or, we can do better and use template litterals to interpolate them
+        //ex: let firstString = "Something"
+        // let secondString = `${ firstString } else`
+        //mainParagraph.textContent = secondString
+        // 'interpreting a string with variables in it' instead of joining them, that's
+        //the difference betwwen this method and concatenation
 
 
 
         //must use this in order for the element we created to appear on the page
-        mainContent.appendChild(mainParagraph)
+        mainContent.before(mainParagraph)
+
+
+        document.innerHTML = `
+            <div class="container">
+                <h1 class="display-1">Hello WEBD 6201</h1>
+                <p class="mt-5 lead">and .. what do you this</p>
+            </div>
+        `
+        //if we use document.textContent it will work but not the way we want, it will just 
+        //show an empty page with the code below shown as a string.
     }
 
     function Start() {
