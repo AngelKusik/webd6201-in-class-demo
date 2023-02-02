@@ -55,6 +55,12 @@
         // `
         //if we use document.textContent it will work but not the way we want, it will just 
         //show an empty page with the code below shown as a string.
+
+        let sohaib = new Contact("Sohaib Mohiuddin", "12345678", "sohaib@sohaib")
+
+        console.log(sohaib.toString())
+
+
     }
 
     function Start() {
