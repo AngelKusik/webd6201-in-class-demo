@@ -1,5 +1,4 @@
 # webd6201-in-class-demo
-A repository for all Webd in-class demos
 
 <h1 align="center">Hi 👋, I'm Angelica, a Computer Programming Student at Durham College</h1>
 <h3 align="center">Working to become a web developer. Superhero enthusiast. I ♥ wine, gardening and the Foo Fighters.</h3>
